@@ -26,3 +26,15 @@ npx prisma format
 
 # Create prisma migration - SQL DB
 npx prisma migrate dev
+
+# Generate a random number of bytes in base64
+openssl rand -base64 32
+
+# React email - react.email
+npx create-email@latest
+
+# Test email templates
+email dev -p 3030
+
+# Send Emails 
+See https://react.email/docs/integrations/resend
