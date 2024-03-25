@@ -6,9 +6,9 @@ export function GET(
     { params }: { params: { id: number } }) {
 
     if (params.id > 10)
-        return NextResponse.json({ error: 'User Not found' }, { status: 404 });
+        return NextResponse.json({ error: 'Product Not found' }, { status: 404 });
 
-    return NextResponse.json({ id: 1, name: 'Mosh' });
+    return NextResponse.json({ id: 1, name: 'Milk', price: 3.5 });
 }
 
 export async function PUT(
@@ -22,9 +22,9 @@ export async function PUT(
         return NextResponse.json(validation.error.errors, { status: 400 });
 
     if (params.id > 10)
-        return NextResponse.json({ error: 'User not found' }, { status: 404 });
+        return NextResponse.json({ error: 'Product not found' }, { status: 404 });
 
-    return NextResponse.json({ id: 1, name: body.name }, { status: 201 });
+    return NextResponse.json({ id: 1, name: body.name, price: body.price }, { status: 201 });
 }
 
 export async function DELETE(
@@ -33,7 +33,7 @@ export async function DELETE(
 
 
     if (params.id > 10)
-        return NextResponse.json({ error: 'User not found' }, { status: 404 });
+        return NextResponse.json({ error: 'Product not found' }, { status: 404 });
 
     return NextResponse.json({ });
 }
