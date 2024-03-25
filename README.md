@@ -13,4 +13,16 @@ ES7 React/Redux/GraphQL/React-Native snippets: Provides code snippets so we can 
     - thead>tr>th*2 will generate the table structure for us easily
 JavaScript and TypeScript Nightly: Enables typescript@next to power VS Code's built-in JavaScript and TypeScript support
 Tailwind CSS IntelliSense: Intelligent Tailwind CSS tooling for VS Code
+Prisma: Adds syntax highlighting, formatting, auto-completion, jump-to-definition and linting for .prisma files.
 
+# See Prisma commands - USEFUL
+npx prisma
+
+# Init prisma in your project
+npx prisma init
+
+# Format prisma schemas
+npx prisma format
+
+# Create prisma migration - SQL DB
+npx prisma migrate dev
